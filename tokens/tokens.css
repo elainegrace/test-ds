@@ -18,7 +18,7 @@
   --color-text-primary: #000000;              /* headlines, project titles */
   --color-text-secondary: #666666;            /* body copy, active nav, emphasis */
   --color-text-muted: #aeaeae;                /* labels, meta, inactive nav */
-  --color-text-wordmark: #6b6a66;             /* "Elaine Bayhon" signature only */
+  --color-text-signature: #6b6a66;            /* wordmark + contact links (standalone serif) */
 
   /* Accent — the single bound Figma variable */
   --color-accent-green: #34c759;              /* "open for new roles" status dot */
@@ -42,8 +42,10 @@
   --text-xl: 1.625rem;      /* 26px — about statement */
   --text-2xl: 1.75rem;      /* 28px — display, secondary line */
   --text-3xl: 1.875rem;     /* 30px — hero display */
+  --text-4xl: 2.5rem;       /* 40px — contact email */
 
   /* Line height */
+  --leading-none: 1;        /* contact links, set solid */
   --leading-tight: 1.3;     /* the system default, used almost everywhere */
   --leading-relaxed: 1.56;  /* 20.74px on 13.3px — meta rows, wordmark */
 
@@ -82,7 +84,10 @@
   --size-icon: 24px;     /* arrow-outward icon */
 
   /* -------------------------------------------------------------- Effects */
-  --blur-glass: 4px;        /* nav backdrop-filter */
-  --opacity-inactive: 0.6;  /* inactive nav items */
-  --radius-none: 0;         /* nothing in this design is rounded */
+  --blur-glass: 4px;           /* nav backdrop-filter */
+  --opacity-inactive: 0.6;     /* inactive nav items */
+  --opacity-halftone: 0.45;    /* Extras carousel halftone layer */
+  --blend-halftone: overlay;   /* Extras carousel halftone layer */
+  --blend-desaturate: saturation; /* Extras carousel saturation layer */
+  --radius-none: 0;            /* nothing in this design is rounded */
 }
